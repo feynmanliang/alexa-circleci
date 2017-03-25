@@ -20,10 +20,10 @@ function processCircleData(callback) {
 
 var handlers = {
     'CheckTestsIntent': function () {
-        var speech = processCircleData(function (speechLines) {
-            return speechLines.join(', ');
+        processCircleData(function (speechLines) {
+            var speech = speechLines.join(', ');
+            this.emit(':tell', speech);
         });
-        this.emit(':tell', speech);
     }
 }
 
