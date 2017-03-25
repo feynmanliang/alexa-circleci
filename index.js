@@ -23,7 +23,7 @@ var handlers = {
         processCircleData(function (speechLines) {
             var speech = speechLines.join(', ');
             this.emit(':tell', speech);
-        });
+        }.bind(this));
     }
 }
 
