@@ -1,0 +1,23 @@
+{
+  "name": "alexa-circleci",
+  "version": "0.0.1",
+  "description": "AWS Lambda function for supporting Alexa CircleCI test status skill",
+  "main": "index.js",
+  "dependencies": {
+    "alexa-sdk": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feynmanliang/alexa-circleci.git"
+  },
+  "author": "feynman.liang@gmail.com",
+  "license": "SEE LICENCE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/feynmanliang/alexa-circleci/issues"
+  },
+  "homepage": "https://github.com/feynmanliang/alexa-circleci#readme"
+}
