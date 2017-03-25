@@ -11,8 +11,8 @@ function processCircleData(callback) {
                 };
             });
             var speechLines = buildStatuses.map(function (build) {
-                return "Repository " + build.reponame.replace(/-/g, " ")
-                    + " has status " + build.latestMasterBuild
+                return "Repository " + build.reponame.replace(/-/g, " ") +
+                    " has status " + build.latestMasterBuild.replace(/_/g, " ")
             });
             callback(speechLines);
         });
