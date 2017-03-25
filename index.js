@@ -13,7 +13,8 @@ function processCircleData(callback) {
             var speechLines = buildStatuses.map(function (build) {
                 return "Repository " + build.reponame.replace(/-/g, " ")
                     + " has status " + build.latestMasterBuild
-            })
+            });
+            callback(speechLines);
         });
 }
 
@@ -21,7 +22,7 @@ var handlers = {
     'CheckTestsIntent': function () {
         var speech = processCircleData(function (speechLines) {
             return speechLines.join(', ');
-        })
+        });
         this.emit(':tell', speech);
     }
 }
