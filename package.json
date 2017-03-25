@@ -4,11 +4,13 @@
   "description": "AWS Lambda function for supporting Alexa CircleCI test status skill",
   "main": "index.js",
   "dependencies": {
-    "alexa-sdk": "^1.0.3"
+    "alexa-sdk": "^1.0.7",
+    "axios": "^0.15.3"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "zip -r alexa-circleci.zip index.js node_modules/*"
   },
   "repository": {
     "type": "git",
